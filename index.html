@@ -1,268 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Lakshmi Avinash Rayudu — Portfolio</title>
-  <meta name="description" content="Implementation & Partner Success professional — Portfolio and resume." />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-    :root{
-      --bg:#0f1222;
-      --card:#151935;
-      --ink:#e8ebff;
-      --muted:#b6b9d6;
-      --accent:#7aa2ff;
-      --chip:#1b2045;
-      --ring: #32407b;
-      --max: 1000px;
-      --radius: 14px;
-      --shadow: 0 10px 30px rgba(0,0,0,.25);
-    }
-    *{box-sizing:border-box}
-    html,body{margin:0;height:100%}
-    body{
-      font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
-      background: radial-gradient(1200px 600px at 10% -10%, #1a1f44 0%, rgba(26,31,68,0) 60%) no-repeat, var(--bg);
-      color:var(--ink);
-      line-height:1.6;
-    }
+        <!--==================== UNICONS ====================-->
+        
+        
+        <!--==================== SWIPER CSS ====================-->
+        <link rel="stylesheet" href="">
+        
+        <!--==================== CSS ====================-->
+        <link rel="stylesheet" href="">
 
-    .wrap{max-width:var(--max); margin:0 auto; padding:24px}
-    header{
-      display:grid; gap:18px;
-      grid-template-columns: 120px 1fr; align-items:center;
-      background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0));
-      border:1px solid var(--ring); border-radius:var(--radius);
-      padding:20px; box-shadow:var(--shadow)
-    }
-    .avatar{
-      width:120px;height:120px;border-radius:14px;
-      background:linear-gradient(135deg,#28306d,#1a1f44); display:flex;align-items:center;justify-content:center;
-      font-size:48px; font-weight:700; color:#cfe0ff; border:1px solid var(--ring)
-    }
-    h1{margin:0; font-size:28px; line-height:1.2}
-    .title{color:var(--muted); margin-top:4px}
-    .meta{
-      display:flex; flex-wrap:wrap; gap:10px; margin-top:12px
-    }
-    .meta a, .meta span{
-      background:var(--chip); color:var(--ink); border:1px solid var(--ring);
-      padding:8px 10px; border-radius:12px; text-decoration:none; font-size:14px
-    }
-    nav{
-      position:sticky; top:0; z-index:10;
-      backdrop-filter: blur(6px);
-      background:rgba(15,18,34,.6);
-      border-bottom:1px solid var(--ring)
-    }
-    .tabs{display:flex; gap:10px; max-width:var(--max); margin:0 auto; padding:10px 24px}
-    .tabs a{
-      color:var(--muted); text-decoration:none; padding:8px 12px; border-radius:10px
-    }
-    .tabs a:hover, .tabs a:focus{outline:none; background:#171c3d; color:var(--ink)}
-    main{display:grid; gap:18px; margin-top:18px}
-    section{
-      background:var(--card); border:1px solid var(--ring);
-      border-radius:var(--radius); padding:22px; box-shadow:var(--shadow)
-    }
-    h2{margin:0 0 12px 0; font-size:20px}
-    .grid-2{display:grid; gap:16px}
-    @media(min-width:900px){ .grid-2{grid-template-columns: 1fr 1fr} }
+        <title>Responsive Portfolio Website</title>
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            
+        </header>
 
-    .item{padding:14px 14px; border:1px solid var(--ring); border-radius:12px; background:#121632}
-    .item h3{margin:0 0 6px 0; font-size:16px}
-    .item .sub{color:var(--muted); font-size:14px}
+        <!--==================== MAIN ====================-->
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home section" id="home">
+                
+            </section>
 
-    ul{padding-left:18px; margin:10px 0 0 0}
-    li{margin:6px 0}
-    .chips{display:flex; flex-wrap:wrap; gap:8px; margin-top:10px}
-    .chip{background:var(--chip); border:1px solid var(--ring); padding:6px 10px; border-radius:999px; font-size:13px}
-    .cta{
-      display:flex; gap:12px; flex-wrap:wrap; margin-top:12px
-    }
-    .btn{
-      appearance:none; border:none; cursor:pointer;
-      background:var(--accent); color:#0b1026; font-weight:700;
-      padding:10px 14px; border-radius:12px; text-decoration:none; display:inline-flex; align-items:center; gap:8px
-    }
-    .btn.secondary{background:#1a224d; color:var(--ink); border:1px solid var(--ring)}
-    footer{color:var(--muted); text-align:center; padding:30px 0}
-    .sr{position:absolute; left:-9999px}
-  </style>
-</head>
-<body>
-  <nav aria-label="Sections">
-    <div class="tabs">
-      <a href="#about">About</a>
-      <a href="#experience">Experience</a>
-      <a href="#education">Education</a>
-      <a href="#skills">Skills</a>
-    </div>
-  </nav>
+            <!--==================== ABOUT ====================-->
+            <section class="about section" id="about">
+                
+            </section>
 
-  <div class="wrap">
-    <header>
-      <div class="avatar" aria-hidden="true">AR</div>
-      <div>
-        <h1>Lakshmi Avinash Rayudu</h1>
-        <div class="title">Implementation & Partner Success • Graduate Student, NYU Tandon</div>
+            <!--==================== SKILLS ====================-->
+            <section class="skills section" id="skills">
 
-        <div class="meta" aria-label="Contact and links">
-          <span>Brooklyn, NY</span>
-          <a href="tel:+19295334711" rel="nofollow">(+1) 929-533-4711</a>
-          <a href="mailto:lr3379@nyu.edu">lr3379@nyu.edu</a>
-          <a href="https://www.linkedin.com/in/avinashrayudu" target="_blank" rel="noopener">LinkedIn</a>
-          <a class="btn secondary" href="sandbox:/mnt/data/Implementation Specialist_Resume.pdf">Download Resume (PDF)</a>
-        </div>
+            </section>
 
-        <div class="cta">
-          <a class="btn" href="mailto:lr3379@nyu.edu?subject=Exploring%20a%20role%20with%20NYU%20Tandon%20grad&body=Hi%20Avinash,%0A%0AWe'd%20love%20to%20speak%20about...">Let’s talk</a>
-        </div>
-      </div>
-    </header>
+            <!--==================== QUALIFICATION ====================-->
+            <section class="qualification section">
 
-    <main>
-      <section id="about" aria-labelledby="about-title">
-        <h2 id="about-title">About</h2>
-        <p>
-          Results-driven Implementation and Partner Success professional with hands-on experience in partner onboarding,
-          project coordination, and data-driven process improvement. Proven record streamlining SaaS onboarding by 25%,
-          leading implementations across six teams, and using CRM and analytics to lift client satisfaction and
-          operational efficiency. Skilled in Salesforce, HubSpot, Excel, and Jira; proactive collaborator and
-          real-time problem solver.
-        </p>
-      </section>
+            </section>
 
-      <section id="experience" aria-labelledby="exp-title">
-        <h2 id="exp-title">Experience</h2>
+            <!--==================== SERVICES ====================-->
+            <section class="services section" id="services">
+                
+            </section>
 
-        <div class="item">
-          <h3>Founder — Virxon Private Limited</h3>
-          <div class="sub">Vijayawada, IN • May 2023 – Apr 2024</div>
-          <div class="chips">
-            <span class="chip">Google Analytics</span>
-            <span class="chip">Microsoft Office</span>
-            <span class="chip">Firebase</span>
-          </div>
-          <ul>
-            <li>Collaborated with 6 cross-functional teams to launch scalable client solutions, increasing partner engagement by 35%.</li>
-            <li>Built Excel and Tableau dashboards for real-time partner monitoring, cutting discrepancies by 35% and improving reporting efficiency.</li>
-            <li>Delivered product training and onboarding docs, achieving 95% partner adoption within 30 days.</li>
-            <li>Led end-to-end onboarding for 20+ SaaS clients, reducing setup time by 25%.</li>
-          </ul>
-        </div>
+            <!--==================== PORTFOLIO ====================-->
+            <section class="portfolio section" id="portfolio">
+                
+            </section>
 
-        <div class="item">
-          <h3>Implementation & CRM Operations Intern — Champlook</h3>
-          <div class="sub">Vijayawada, IN • Jun 2022 – Dec 2022</div>
-          <div class="chips">
-            <span class="chip">PowerPoint</span>
-            <span class="chip">Excel</span>
-          </div>
-          <ul>
-            <li>Supported onboarding/config for 15+ partners; documented requirements and ensured clean handoff to Success.</li>
-            <li>Managed Salesforce and HubSpot with 98% accuracy across 500+ records, improving pipeline visibility and reducing missed follow-ups by 40%.</li>
-            <li>Ran competitor and feedback analyses; recommended 3 process improvements adopted by leadership.</li>
-          </ul>
-        </div>
+            <!--==================== PROJECT IN MIND ====================-->
+            <section class="project section">
 
-        <div class="item">
-          <h3>Program Associate Intern — SRM University (E-Cell)</h3>
-          <div class="sub">Vijayawada, IN • Jan 2022 – May 2022</div>
-          <div class="chips">
-            <span class="chip">Marketing</span>
-            <span class="chip">Course Management</span>
-            <span class="chip">Performance Evaluation</span>
-          </div>
-          <ul>
-            <li>Coordinated 6 startup-focused initiatives with 400+ participants using Agile practices in Jira; delivered 100% on time.</li>
-            <li>Designed and executed 10+ marketing campaigns, lifting engagement by 40%.</li>
-            <li>Maintained CRM of 500+ contacts with 98% accuracy; cut response time to under 24 hours.</li>
-          </ul>
-        </div>
-      </section>
+            </section>
 
-      <section id="education" aria-labelledby="edu-title">
-        <h2 id="edu-title">Education</h2>
-        <div class="grid-2">
-          <div class="item">
-            <h3>New York University, Tandon School of Engineering</h3>
-            <div class="sub">M.S. Management of Technology • Sep 2024 – May 2026 • New York, NY</div>
-          </div>
-          <div class="item">
-            <h3>SRM University, AP</h3>
-            <div class="sub">B.Tech, Electrical & Electronics Engineering • Aug 2019 – May 2023 • Amaravathi, IN</div>
-          </div>
-        </div>
-      </section>
+            <!--==================== TESTIMONIAL ====================-->
+            <section class="testimonial section">
+                
+            </section>
 
-      <section id="skills" aria-labelledby="skills-title">
-        <h2 id="skills-title">Skills</h2>
-        <div class="grid-2">
-          <div class="item">
-            <h3>CRM & Partner Tools</h3>
-            <div class="chips">
-              <span class="chip">Salesforce</span>
-              <span class="chip">HubSpot</span>
-              <span class="chip">Dynamics 365</span>
-            </div>
-          </div>
-          <div class="item">
-            <h3>Project & Analytics</h3>
-            <div class="chips">
-              <span class="chip">Jira</span>
-              <span class="chip">Tableau</span>
-              <span class="chip">Excel</span>
-              <span class="chip">Power BI</span>
-            </div>
-          </div>
-          <div class="item">
-            <h3>Data & Scripting</h3>
-            <div class="chips">
-              <span class="chip">SQL</span>
-              <span class="chip">Python (basic)</span>
-              <span class="chip">Google Analytics</span>
-            </div>
-          </div>
-          <div class="item">
-            <h3>Collaboration & Soft Skills</h3>
-            <div class="chips">
-              <span class="chip">Microsoft Office</span>
-              <span class="chip">Google Workspace</span>
-              <span class="chip">Slack</span>
-              <span class="chip">Stakeholder Mgmt</span>
-              <span class="chip">Process Optimization</span>
-              <span class="chip">Data-driven decisions</span>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
+            <!--==================== CONTACT ME ====================-->
+            <section class="contact section" id="contact">
 
-    <footer>
-      © <span id="y"></span> Lakshmi Avinash Rayudu • Open to Implementation, Partner Success, and Ops roles
-    </footer>
-  </div>
+            </section>
+        </main>
 
-  <script>
-    // simple smooth scroll
-    document.querySelectorAll('a[href^="#"]').forEach(a=>{
-      a.addEventListener('click', e=>{
-        const id = a.getAttribute('href').slice(1);
-        const el = document.getElementById(id);
-        if(el){
-          e.preventDefault();
-          el.scrollIntoView({behavior:'smooth', block:'start'});
-        }
-      });
-    });
-    // year
-    document.getElementById('y').textContent = new Date().getFullYear();
-  </script>
-</body>
+        <!--==================== FOOTER ====================-->
+        <footer class="footer">
+         
+        </footer>
+        
+        <!--==================== SCROLL TOP ====================-->
+        
+
+        <!--==================== SWIPER JS ====================-->
+        <script src=""></script>
+
+        <!--==================== MAIN JS ====================-->
+        <script src=""></script>
+    </body>
 </html>
-
